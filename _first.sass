@@ -1,0 +1,35 @@
+#first
+    .box
+        display: flex
+        justify-content: space-between
+        margin-top: 70px
+
+        .minibox
+            width: 250px
+            height: 250px
+            border: 5px solid #368764
+            background-color: #5183a7
+            display: flex
+            justify-content: center
+            align-items: center
+            .bluebox
+                width: 120px
+                height: 120px
+                border: 2px solid #345880
+                background-color: #345880
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 1.3s
+                &:hover
+                    width: 160px
+                    height: 160px
+                h1
+                    color: #ffffff
+                    font-size: 30px
+                    font-weight: 700
+    @media screen and ( max-width: 750px )
+        .box
+            display: flex
+            align-items: center
+            flex-direction: column
