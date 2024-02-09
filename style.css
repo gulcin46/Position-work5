@@ -6,7 +6,7 @@ body {
 #first .box {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin: 70px 0px;
 }
 #first .box .minibox {
   width: 250px;
@@ -41,5 +41,36 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+}
+
+#second .box {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0px;
+}
+#second .box .minibox {
+  border: 8px solid #88637b;
+  background-color: #88637b;
+  width: 270px;
+  height: 130px;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+#second .box .minibox:hover {
+  background-color: #474354;
+}
+#second .box .minibox h1 {
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  #second .box .minibox {
+    width: 190px;
+    height: 81px;
+    border: 8px solid #7384c0;
+    background: #7384c0;
   }
 }/*# sourceMappingURL=style.css.map */
