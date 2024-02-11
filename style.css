@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
 }
 #first .box .minibox .bluebox {
   width: 120px;
@@ -44,33 +45,93 @@ body {
   }
 }
 
+#second {
+  padding: 60px 60px 0 0;
+}
 #second .box {
   display: flex;
-  justify-content: space-around;
-  margin: 70px 0px;
+  align-items: center;
+  flex-direction: column;
 }
 #second .box .minibox {
-  border: 8px solid #88637b;
-  background-color: #88637b;
-  width: 270px;
-  height: 130px;
-  border-radius: 10px;
-  transition: 1.5s;
-}
-#second .box .minibox:hover {
-  background-color: #474354;
+  width: 48px;
+  height: 41px;
+  border: 2px solid #45354d;
+  background-color: #45354d;
+  border-radius: 3px;
+  transition: 2s;
 }
 #second .box .minibox h1 {
   color: #ffffff;
-  font-size: 35px;
   text-align: center;
-  margin-top: 10px;
+  font-size: 10px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) {
   #second .box .minibox {
-    width: 190px;
-    height: 81px;
-    border: 8px solid #7384c0;
-    background: #7384c0;
+    border: 2px solid #7384c0;
+    background-color: #7384c0;
   }
+}
+@media screen and (min-width: 600px) {
+  #second .box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #second .box .minibox {
+    width: 96px;
+    height: 41px;
+    border: 2px solid #7384c0;
+    background-color: #7384c0;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #second .box .minibox h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 800px) {
+  #second .box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #second .box .minibox {
+    width: 199px;
+    height: 88px;
+    border: 2px solid #88637b;
+    background-color: #88637b;
+    border-radius: 5px;
+    padding: 0px 0px 35px 0px;
+    transition: 2s;
+  }
+  #second .box .minibox:hover {
+    border: 6px solid #88637b;
+    background-color: #474354;
+  }
+  #second .box .minibox h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+#third {
+  padding: 60px 0 0 0;
+}
+#third .box {
+  display: flex;
+  justify-content: space-around;
+}
+#third .box .minibox {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #c4c486;
+  background-color: #c4c486;
+  border-radius: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

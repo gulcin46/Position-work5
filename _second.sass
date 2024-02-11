@@ -1,34 +1,61 @@
 #second
+    padding: 60px 60px 0 0
     .box
+       
         display: flex
-        justify-content: space-around
-        margin: 70px 0px
+        align-items: center
+        flex-direction: column
         .minibox
-            border: 8px solid #88637b
-            background-color: #88637b
-            width: 270px
-            height: 130px
-            border-radius: 10px
-            transition: 1.5s
-            &:hover
-                background-color: #474354
+            width: 48px
+            height: 41px
+            border: 2px solid #45354d
+            background-color: #45354d
+            border-radius: 3px
+            transition: 2s
             h1
                 color: #ffffff
-                font-size: 35px
                 text-align: center
-                margin-top: 10px
-    @media screen and ( max-width: 800px )
+                font-size: 10px
+    @media screen and ( min-width: 500px )
         .box
             .minibox
-                width: 190px
-                height: 81px
-                border: 8px solid #7384c0
-                background: #7384c0
-    @media screen and ( max-width: 600px )
+                border: 2px solid #7384c0
+                background-color: #7384c0
+
+    @media screen and ( min-width: 600px )
         .box
             display: flex
-            flex-direction: column
+            justify-content: space-around
+            flex-direction: row
             .minibox
+                width: 96px
+                height: 41px
+                border: 2px solid #7384c0
+                background-color: #7384c0
+                border-radius: 0px
+                display: flex
+                justify-content: center
+                align-items: center
+                h1
+                    font-size: 20px
+                    font-weight: 400
+    @media screen and ( min-width: 800px )
+        .box
+            display: flex
+            justify-content: space-around
+            flex-direction: row
+            .minibox
+                width: 199px
+                height: 88px
+                border: 2px solid #88637b
+                background-color: #88637b
+                border-radius: 5px
+                padding: 0px 0px 35px 0px
 
-     @media screen and ( max-width: 500px )
-
+                transition: 2s
+                &:hover
+                    border: 6px solid #88637b
+                    background-color: #474354
+                h1
+                    font-size: 20px
+                    font-weight: 400
