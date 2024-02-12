@@ -29,8 +29,8 @@ body {
   transition: 1.3s;
 }
 #first .box .minibox .bluebox:hover {
-  width: 160px;
-  height: 160px;
+  width: 190px;
+  height: 190px;
 }
 #first .box .minibox .bluebox h1 {
   color: #ffffff;
@@ -181,5 +181,26 @@ body {
   transform: translate(306px, 0px);
 }
 #fourth .minibox1 {
+  transform: translate(0px, -221px);
+}
+
+#fifth .minibox, #fifth .minibox1, #fifth .minibox2 {
+  width: 308px;
+  height: 206px;
+  border: 2px solid #7b9f6e;
+  background-color: #7b9f6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 1px 0px 0px;
+}
+#fifth .minibox h1, #fifth .minibox1 h1, #fifth .minibox2 h1 {
+  font-size: 27px;
+  color: #ffffff;
+}
+#fifth .minibox1 {
+  transform: translate(306px, 0px);
+}
+#fifth .minibox2 {
   transform: translate(0px, -221px);
 }/*# sourceMappingURL=style.css.map */
