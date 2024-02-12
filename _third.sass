@@ -1,15 +1,36 @@
 #third
-    padding: 60px 0 0 0
+    padding: 60px 0 60px 0
     .box
 
         display: flex
         justify-content: space-around
         .minibox
-            width: 150px
-            height: 150px
-            border: 2px solid #c4c486
-            background-color: #c4c486
-            border-radius: 85px
+            width: 260px
+            height: 250px
+            border: 2px solid #966d49
+            background-color: #966d49
+            border-radius: 50%
             display: flex
             justify-content: center
             align-items: center
+            transition: 1.1s
+            &:hover
+                border-radius: 30%
+            h1
+                font-size: 39px
+                font-weight: 700
+                color: #ffffff
+    @media screen and ( max-width: 800px )
+        .box
+
+            .minibox
+                width: 80px
+                height: 80px
+                background-color: #c4c486
+                border-color: #c4c486
+    @media screen and ( max-width: 500px )
+        .box
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            .minibox
