@@ -1,43 +1,45 @@
 #first
+    padding: 50px
     .box
         display: flex
-        justify-content: space-around
-        padding: 36px 0px 45px 0px
+        justify-content: center
+        
 
-        .minibox
-            width: 250px
-            height: 250px
-            border: 5px solid #368764
-            background-color: #5183a7
+    .minibox
+        width: 250px
+        height: 250px
+        border: 5px solid #368764
+        background-color: #5183a7
+        display: flex
+        justify-content: center
+        align-items: center
+        .bluebox
+            width: 120px
+            height: 120px
+            border: 2px solid #345880
+            background-color: #345880
             display: flex
             justify-content: center
             align-items: center
-            .bluebox
-                width: 120px
-                height: 120px
-                border: 2px solid #345880
-                background-color: #345880
-                display: flex
-                justify-content: center
-                align-items: center
-                transition: 1.3s
-                &:hover
-                    width: 190px
-                    height: 190px
-                h1
-                    color: #ffffff
-                    font-size: 30px
-                    font-weight: 700
+            transition: 1.3s
+            h1
+                color: #ffffff
+                font-size: 30px
+                font-weight: 700
+            &:hover
+                width: 190px
+                height: 190px
+
     @media screen and ( max-width: 750px )
         .box
             display: flex
             align-items: center
-            justify-content: center
+            justify-content: space-center
             flex-direction: column
+F
+        .minibox
 
-            .minibox
-
-                border: 3px solid #368764
-                background-color: #5183a7
-                width: 250px
-                height: 250px
+            border: 3px solid #368764
+            background-color: #5183a7
+            width: 250pxf
+            height: 250px

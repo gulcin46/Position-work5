@@ -3,12 +3,14 @@ body {
   font-weight: 500;
 }
 
+#first {
+  padding: 50px;
+}
 #first .box {
   display: flex;
-  justify-content: space-around;
-  padding: 36px 0px 45px 0px;
+  justify-content: center;
 }
-#first .box .minibox {
+#first .minibox {
   width: 250px;
   height: 250px;
   border: 5px solid #368764;
@@ -17,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#first .box .minibox .bluebox {
+#first .minibox .bluebox {
   width: 120px;
   height: 120px;
   border: 2px solid #345880;
@@ -27,28 +29,29 @@ body {
   align-items: center;
   transition: 1.3s;
 }
-#first .box .minibox .bluebox:hover {
-  width: 190px;
-  height: 190px;
-}
-#first .box .minibox .bluebox h1 {
+#first .minibox .bluebox h1 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
+}
+#first .minibox .bluebox:hover {
+  width: 190px;
+  height: 190px;
 }
 @media screen and (max-width: 750px) {
   #first .box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-center;
     flex-direction: column;
   }
-  #first .box .minibox {
-    border: 3px solid #368764;
-    background-color: #5183a7;
-    width: 250px;
-    height: 250px;
-  }
+}
+
+F .minibox {
+  border: 3px solid #368764;
+  background-color: #5183a7;
+  width: 250pxf;
+  height: 250px;
 }
 
 #second {
