@@ -1,8 +1,8 @@
 #first
     .box
         display: flex
-        justify-content: space-between
-        margin: 70px 0px
+        justify-content: space-around
+        padding: 36px 0px 45px 0px
 
         .minibox
             width: 250px
@@ -13,6 +13,7 @@
             justify-content: center
             align-items: center
             margin-left: 30px
+           
             .bluebox
                 width: 120px
                 height: 120px
@@ -31,6 +32,15 @@
                     font-weight: 700
     @media screen and ( max-width: 750px )
         .box
+            padding: 36px 0px 45px 0px
             display: flex
             align-items: center
             flex-direction: column
+           
+            .minibox
+                border: 3px solid #368764
+                background-color: #5183a7
+                width: 250px
+                height: 250px
+                
+                
